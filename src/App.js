@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Shop from "./components/Shop";
 import SingleItem from "../src/components/Single/SingleItem"
+import Loginroute from "../src/components/Lolink";
 import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       {/* <ProductList /> */}
 
       <Routes>
-      <Route path="/" element={<ProductList />} />
+      <Route path="/" element ={< Loginroute />}/>
       <Route path="/about" element={<Loginmain />} />
 
 

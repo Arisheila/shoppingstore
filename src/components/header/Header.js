@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react"
-import shoplogo from "../banner/shoplogo.png"
+import shoplogo from "./login/shoplogo.png"
 import { Link } from "react-router-dom"
 import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai"
 import { HiOutlineHeart } from "react-icons/hi"
