@@ -1,0 +1,29 @@
+test files are named with two options extension e.g 
+header.specs.js
+header.test.js
+
+initailizing jest test environment:- npm i jest --save-dev
+
+npm test :- to initailize the test 
+npm run jest in git bash terminal
+
+1. common .js with initial file has module exports ==> require to import the file
+2. Normal Js 
+
+jest coverage : tells you how much of your code is covered by test in a table format in the terminal
+
+
+Has certain methods that one has to follow strictly 
+
+No html tags are allowed in the test file 
+
+Strictly the Jest methods should be in Javascript Language
+
+Jest is run in a command line and have no access to the Dom 
+So you need a react Library to access the Dom ability 
+
+render creates a Dom like terminal for us.
+
+A MUST
+You need a react testing Library 
+npm i @testing-library/react OR yarn add @testing-library/react :-to set it up 
