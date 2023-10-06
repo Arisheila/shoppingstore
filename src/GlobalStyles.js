@@ -142,6 +142,17 @@ header .nav-icons .nav-icon-list {
 
 }
 
+// login Part
+// Delivery
+.Container{
+  background: #FAF4F4;
+  width: 1440px;
+height: 300px;
+top: 1176px;
+
+
+}
+
 @media only screen and (max-width: 600px) {
   .products .product-row {
     justify-content: center;

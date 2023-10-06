@@ -1,4 +1,5 @@
 // import "./App.css";
+import Loginmain from "./components/Login/Loginmain";
 import Header from "./components/header/Header";
 import Banner from "./components/banner/Banner";
 import ProductList from "./components/product-list/ProductList";
@@ -12,15 +13,19 @@ function App() {
   return (
     <div className="App">
     <  Router>
+   
       {/* <Header /> */}
       {/* <Banner /> */}
       {/* <ProductList /> */}
 
       <Routes>
       <Route path="/" element={<ProductList />} />
+      <Route path="/about" element={<Loginmain />} />
+
+
       <Route path="/contact" element={<Contact />} />
       <Route path="/shop" element={<Shop />} />
-      <Route path="/about" element={<About />} />
+      {/* <Route path="/about" element={<About />} /> */}
       <Route path="/shop/:id" element={<SingleItem />} />
      
      </Routes>
