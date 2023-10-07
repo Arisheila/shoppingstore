@@ -4,8 +4,10 @@ export default function Login() {
   return (
     <div className='container flex justify-between'>
       {/* Login Form */}
-      <div className='login w-1/2 p-4'>
-        <div className='login-text mb-4'>
+      {/* <div className='login w-1/2 p-4'> */}
+      <div className='login-container'>
+        {/* <div className='login-text mb-4'> */}
+        <div className='login-container-layout'>
           <h1 className='text-2xl'>Log in</h1>
         </div>
         <form>
@@ -25,8 +27,10 @@ export default function Login() {
       </div>
 
       {/* Registration Form */}
-      <div className='login w-1/2 p-4'>
-        <div className='login-text mb-4'>
+      {/* <div className='login w-1/2 p-4'> */}
+      <div className='login-container'>
+        {/* <div className='login-text mb-4'> */}
+        <div className='layout-register'>
           <h1 className='text-2xl'>Register</h1>
         </div>
         <form>

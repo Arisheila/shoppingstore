@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Delivery() {
+export default function Footer() {
 	return (
 		<div>
 			<div className="container flex justify-between">
@@ -39,7 +39,8 @@ export default function Delivery() {
 					</p>
 				</div>
 			</div>
-          
+			
+          <hr/>
         <div className="text-left mt-4">
         <h1 className="text-lg text-gray-700">
           2022 Meubel House. All rights reserved

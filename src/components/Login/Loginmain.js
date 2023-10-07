@@ -16,7 +16,7 @@ export default function Loginmain() {
     <br/>
     <Delivery />
     <br/>
-    <hr/>
+    
     <Footer />
 
     </>

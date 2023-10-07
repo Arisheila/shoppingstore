@@ -13,21 +13,21 @@ const { Typography } = require("@mui/material");
 // top: 100px
 
 // }
-// Login{
+// Login{1.
 //     width: 608px
 // height: 630px
 // top: 479px
 // left: 100px
 // }
 
-// Layout Login {
+// Layout Login {2.
 //     width: 608px
 // height: 630px
 // top: 479px
 // left: 100px
 
 // }
-// input{
+// input{2.
 //     font-family: Poppins;
 // font-size: 16px;
 // font-weight: 500;
@@ -37,17 +37,18 @@ const { Typography } = require("@mui/material");
 
 //     border: 1px solid #9F9F9F
 // }
-// Layout Register {
+// Layout Register {1.
 //     width: 608px
 // height: 630px
 // top: 479px
 // left: 100px
 
 // }
-//  deliveryLayout
+//  deliveryLayout3.
 // width: 1440px
 // height: 300px
 // top: 1176px
+
 // //  Inside divs
 // width: 376px
 // height: 108px
@@ -75,6 +76,7 @@ const { Typography } = require("@mui/material");
 // height: 419px
 // top: 1574px
 // left: 100px
+
 //  Inside div alone with 4 display flex items 
 // width: 1131px
 // height: 312px

@@ -144,19 +144,102 @@ header .nav-icons .nav-icon-list {
 
 // login Part
 // Delivery
-.Container{
+.deliveryLayout{
   background: #FAF4F4;
   width: 1440px;
 height: 300px;
 top: 1176px;
-
-
+}
+// login part
+.login-container{
+width: 608px;
+height: 630px;
+ top: 479px;
+left: 100px;
+ }
+ input{
+  font-family: Poppins;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+  letter-spacing: 0em;
+   text-align: left;
+   border: 1px solid #9F9F9F
+ }
+.layout-register{
+  width: 608px
+   height: 630px
+  top: 479px
+   left: 100px
+}
+.card{
+  width: 376px
+height: 108px
+top: 1272px
+left: 944px
+}
+h2{
+  margin-top:100px;
+}
+.card-image-text{
+  font-family: Poppins;
+font-size: 32px;
+ font-weight: 500;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+}
+.card-image-para{
+ font-family: Poppins;
+ font-size: 20px;
+font-weight: 400;
+ line-height: 30px;
+ letter-spacing: 0em;
+ text-align: left;
 }
 
+.delivery-container{
+  width: 1240.01px;
+ height: 419px;
+ top: 1574px;
+ left: 100px;
+}
+.delivery-container-entire{
+  display:flex;
+  width: 1131px;
+ height: 312px;
+ top: 1574px;
+ left: 102.01px;
+ border: 1px;
+
+//   text 
+ font-family: Poppins;
+font-size: 16px;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0em;
+ text-align: left;
+}
+
+.link{
+   width: 68px;
+   height: 312px;
+   top: 1574px;
+   left: 523.01px;
+   color:#9f9f9f;
+} 
+.help {
+  width: 140px;
+  height: 242px;
+  top: 1574px;
+  left: 735.01px;
+}
+
+
+
 @media only screen and (max-width: 600px) {
-  .products .product-row {
-    justify-content: center;
-  }
+  
+
 }
 
 

@@ -1,7 +1,7 @@
 /** @format */
 
-import shoplogo from "./shoplogo.png"
-import arrow from "./bannerArrow.png"
+import shoplogo from "../banner/shoplogo.png"
+import arrow from "../banner/bannerArrow.png"
 
 const LoginBanner = () => {
 	return (
