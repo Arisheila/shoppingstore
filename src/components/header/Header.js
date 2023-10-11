@@ -1,4 +1,3 @@
-/** @format */
 
 import React from "react"
 import shoplogo from "../banner/shoplogo.png"

@@ -37,7 +37,6 @@ header .nav-icons .nav-icon-list {
 /* Banner Component CSS */
 .banner {
   background-image: url(${require('./img/banner.png')}); /* Import the background image dynamically */
-  // background-image: url(./img/banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -154,9 +153,12 @@ top: 1176px;
 }
 
 @media only screen and (max-width:500px) {
-  .products .product-row {
-    justify-content: center;
-  }
+  .products .product-row{
+    display:block;
+  },
+
+ 
+
 }
 
 
