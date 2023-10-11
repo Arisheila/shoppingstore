@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from "axios";
 
 export default function Login() {
+  const [email, setEmail] =useState(" ")
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+
+  };
+
+
   return (
     <div className='container flex justify-between'>
       {/* Login Form */}
@@ -43,6 +52,8 @@ export default function Login() {
             Register
           </button>
           <p className='mt-2'>Lost Your Password?</p>
+
+
         </form>
       </div>
     </div>
