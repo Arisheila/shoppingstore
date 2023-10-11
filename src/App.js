@@ -1,5 +1,4 @@
 // import "./App.css";
-import Loginmain from "./components/Login/Loginmain";
 import Header from "./components/header/Header";
 import Banner from "./components/banner/Banner";
 import ProductList from "./components/product-list/ProductList";
@@ -20,7 +19,7 @@ function App() {
 
       <Routes>
       <Route path="/" element={<ProductList />} />
-      <Route path="/about" element={<Loginmain />} />
+      <Route path="/about" element={<About />} />
 
 
       <Route path="/contact" element={<Contact />} />
