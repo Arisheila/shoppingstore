@@ -72,76 +72,6 @@ header .nav-icons .nav-icon-list {
   font-size: 16px;
 }
 
-/* PRODUCT CSS */
-.products {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.products .product-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 78px 0;
-}
-.product-img {
-  height: 150px;
-  width: 200px;
-}
-
-.product-col {
-  text-align: center;
-  flex: 0 0 calc(25% - 16px);
-  margin-bottom: 50px;
-}
-.product-col .product-title {
-  font-family: Poppins;
-  font-weight: 400;
-  margin-top: 10px;
-}
-.product-col .product-price {
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 500;
-  margin-top: 10px;
-}
-
-.products .products-pagination {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.products .products-pagination div {
-  display: flex;
-  gap: 38px;
-}
-.products .products-pagination div .products-pagination-btn {
-  padding: 10px 15px;
-  font-size: 20px;
-  font-family: Poppins;
-  font-weight: 400;
-  background-color: #fbebb5;
-  cursor: pointer;
-}
-
-// active Pagination page 
-
-.active-page {
-  background-color: #f0f0f0;
-  font-weight: bold;
-}
-
-// footer.css
-.footer{
-  border-top: 1px solid #9f9f9f;
-  width: 50%;
-}
-
-.breadcrumbs-item{
-  list-style:none;
-
-}
-
 // login Part
 // Delivery
 .deliveryLayout{
@@ -151,12 +81,12 @@ height: 300px;
 top: 1176px;
 }
 // login part
-.login-container{
-width: 608px;
-height: 630px;
- top: 479px;
-left: 100px;
- }
+// .login-container{
+// width: 608px;
+// height: 630px;
+//  top: 479px;
+// left: 100px;
+//  }
  input{
   font-family: Poppins;
    font-size: 16px;
@@ -210,7 +140,7 @@ font-weight: 400;
  height: 312px;
  top: 1574px;
  left: 102.01px;
- border: 1px;
+ border: 1px;}
 
 //   text 
  font-family: Poppins;
@@ -234,11 +164,40 @@ font-size: 16px;
   top: 1574px;
   left: 735.01px;
 }
+.containers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px; /* Adjust the gap between columns as needed */
+  width: 608px;
+  height: 630px;
+  position: absolute;
+  top: 479px;
+  left: 100px;
+}
 
 
+@media only screen and (max-width: 500px) {
+  .containers{
+    // display:grid;
+    grid-template-columns: 1fr;
+  }
+  // .delivery-container{
+  //   height: 1240.01px;
+  //  width: 419px;
 
-@media only screen and (max-width: 600px) {
+  // }
+
+    .deliveryLayout {
+      padding: 1rem; /* Add padding to the entire section for spacing */
+    }
   
+    .card-image {
+      width: 100%; /* Set the width to 100% for each card */
+      margin-bottom: 1rem; /* Add some bottom margin for spacing */
+    }
+  }
+  
+
 
 }
 
