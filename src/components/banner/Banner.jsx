@@ -12,9 +12,9 @@ const Banner = () => {
 				</div>
 				<h3 className="banner-content-title text-black">Shop</h3>
 				<div className="flex gap-6">
-					<h4 className="text-base text-black">Home</h4>
+					<h4 className="text-base">Home</h4>
 					<img src={arrow} alt="Left-Arrow" />
-					<p className="text-base text-black ">Shop</p>
+					<p className="text-base">Shop</p>
 				</div>
 			</div>
 		</div>
