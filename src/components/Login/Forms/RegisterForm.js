@@ -21,7 +21,7 @@ export default function RegisterForm() {
           <p> A link to set your new password will be sent to your email <br/> address </p>
           
           <p> Your personal data will be used to support your<br/> experience throughout this website, to manage access <br/> to your account, and for other purposes described in our<br/> <b> privacy policy.</b></p>
-          <button className="py-2 px-4 border border-slate-800 rounded-md bg-green-500 text-white">
+          <button className="py-2 px-4 border border-slate-800 rounded-md bg-blue-500 text-white">
             Register
           </button>
           <p className='mt-2'>Lost Your Password?</p>

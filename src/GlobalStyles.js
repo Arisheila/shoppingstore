@@ -81,12 +81,7 @@ height: 300px;
 top: 1176px;
 }
 // login part
-// .login-container{
-// width: 608px;
-// height: 630px;
-//  top: 479px;
-// left: 100px;
-//  }
+
  input{
   font-family: Poppins;
    font-size: 16px;
@@ -164,29 +159,35 @@ font-size: 16px;
   top: 1574px;
   left: 735.01px;
 }
-.containers {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px; /* Adjust the gap between columns as needed */
-  width: 608px;
-  height: 630px;
-  position: absolute;
-  top: 479px;
-  left: 100px;
+
+// .form-container{
+//  ; display: flex;
+//   grid-template-columns: 1fr 1fr;
+// }
+// .containers {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-column-gap: 10px; /* Adjust the gap between columns as needed */
+//   width: 608px;
+//   height: 630px;
+//   position: absolute;
+//   top: 479px;
+//   left: 100px;
+// }
+
+// .form-container{
+//   display: flex;
+//   justify-content: space-between; /* Adjust as needed for your layout */
+//   margin: 0 auto;
+//   width: 60%;
+//   padding: 90px 0px;
+// }
+
+.form-container{
+  display: flex;
 }
 
-
 @media only screen and (max-width: 500px) {
-  .containers{
-    // display:grid;
-    grid-template-columns: 1fr;
-  }
-  // .delivery-container{
-  //   height: 1240.01px;
-  //  width: 419px;
-
-  // }
-
     .deliveryLayout {
       padding: 1rem; /* Add padding to the entire section for spacing */
     }

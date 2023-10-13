@@ -3,8 +3,6 @@
 //     width: 1440px;
 // height: 100px;
 
-const { LayersOutlined } = require("@mui/icons-material");
-const { Typography } = require("@mui/material");
 
 // }
 // bannerimage{
