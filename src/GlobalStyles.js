@@ -140,7 +140,37 @@ header .nav-icons .nav-icon-list {
   list-style:none;
 
 }
+// .humberger{
+//   display:block;
+//   cursor:pointer;
+//   width:35px;
+//   height;35px;
+//   appearence:none;
+//   background:none;
+//   outline:none;
+//   border:none;
+//   positive:relative;
+//  }
+//  .humberger .bar, .humberger:before, .humberger.after{
+//   content:"";
+//   display:block;
+//   width:100%;
+//   height:5px;
+//   backgroundColor:white;
+//   margin:6px 6px;
+//   transition:0.4s;
+//  }
+//  .humberger.is-active:before{
+// transform: rotate(-45deg) translate(-8px, 6px);
+//  }
 
+//  .humberger.is-active:after{
+//   transform: rotate(45deg) translate(-9px, -8px);
+//    }
+
+//  .humberger.is-active .bar{
+//   opacity:0;
+//    }
 // login Part
 // Delivery
 .Container{
@@ -148,17 +178,13 @@ header .nav-icons .nav-icon-list {
   width: 1440px;
 height: 300px;
 top: 1176px;
-
-
 }
+
 
 @media only screen and (max-width:500px) {
   .products .product-row{
     display:block;
   },
-
- 
-
 }
 
 

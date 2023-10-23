@@ -1,5 +1,5 @@
-
 import React from "react"
+import "./Header.css";
 import shoplogo from "../banner/shoplogo.png"
 import { Link } from "react-router-dom"
 import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai"
@@ -14,6 +14,7 @@ const Header = () => {
 					<img src={shoplogo} alt="shop-logo" className="banner-content-icon" />
 				</Link>
 			</div>
+			<input type='checkbox' className='check' />
 			<nav>
 				<ul className="nav-list">
 					<li className="nav-list-items">
@@ -29,7 +30,11 @@ const Header = () => {
 						<Link to="/contact">Contact</Link>
 					</li>
 				</ul>
+				{/* <label for="check" className="close-menu"> <i className="fas fa-times"></i> </label> */}
+	
 			</nav>
+			{/* <label for="check" className="open-menu"><i className="fas fa-bars"></i></label> */}
+
 			<div className="nav-icons">
 				<ul className="nav-icon-list">
 					<li className="nav-icon-list">

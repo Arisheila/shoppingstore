@@ -14,7 +14,7 @@ const Banner = () => {
 				<div className="flex gap-6">
 					<h4 className="text-base">Home</h4>
 					<img src={arrow} alt="Left-Arrow" />
-					<p className="text-base">Shop</p>
+					<h4 className="text-base">Shop</h4>
 				</div>
 			</div>
 		</div>
