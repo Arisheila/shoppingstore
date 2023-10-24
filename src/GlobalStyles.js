@@ -196,11 +196,12 @@ font-size: 16px;
       width: 100%; /* Set the width to 100% for each card */
       margin-bottom: 1rem; /* Add some bottom margin for spacing */
     }
+    .form-container{display:block;}
   }
+
   
 
 
-}
 
 
 

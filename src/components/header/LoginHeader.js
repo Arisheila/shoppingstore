@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react"
-import "./Header.css"
+import "./Header.css";
 import shoplogo from "../banner/shoplogo.png"
 import { Link } from "react-router-dom"
 import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai"
@@ -10,7 +10,7 @@ import { TbUserExclamation } from "react-icons/tb"
 import { FaBars } from "react-icons/fa"
 import { RxCross2 } from "react-icons/rx"
 
-const LoginHeader = () => {
+const Header = () => {
 	return (
 		<header>
 			<nav>
