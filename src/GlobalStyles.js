@@ -22,13 +22,13 @@ header .nav-list {
 header .nav-list .nav-list-items {
   list-style: none;
 }
-header .nav-list .nav-list-items .nav-list-items-links {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 500;
-}
+// header .nav-list .nav-list-items .nav-list-items-links {
+//   text-decoration: none;
+//   color: black;
+//   font-size: 16px;
+//   font-family: Poppins;
+//   font-weight: 500;
+// }
 header .nav-icons .nav-icon-list {
   display: flex;
   list-style: none;
