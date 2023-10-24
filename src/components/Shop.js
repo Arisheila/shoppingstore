@@ -10,6 +10,7 @@ export default function Shop() {
     <Header/>
     
     <Banner/>
+    
         <h1>shop</h1>
     </div>
   )

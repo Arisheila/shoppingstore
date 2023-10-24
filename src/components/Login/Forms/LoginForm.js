@@ -1,3 +1,5 @@
+/** @format */
+
 // import React from 'react';
 
 // export default function LoginForm() {
@@ -7,8 +9,6 @@
 //     remember: "true",
 //     email:"" // Change the initial value to a boolean
 //   });
-
-
 
 //  function handleChange(event) {
 //   const { name, value, type, checked } = event.target;
@@ -20,7 +20,6 @@
 //     };
 //   });
 // }
-
 
 //   function handleSubmit(event) {
 //     event.preventDefault();
@@ -75,140 +74,77 @@
 //   );
 // }
 
+import React from "react"
 
-import React from "react";
+export default function Form() {
+	// const [firstName, setFirstName] =React.useState("")
+	// function handleChange(event){
+	// setFirstName(event.target.value)
+	// }
+	const [formData, setFormData] = React.useState({
+		firstName: "",
+		lastName: "",
+		email: "",
+		comments: "",
+		isBirthDay: "true",
+		employment: "",
+		favColor: "",
+	})
 
-export default function Form(){
-    // const [firstName, setFirstName] =React.useState("")
-    // function handleChange(event){
-        // setFirstName(event.target.value)
-    // }
-     const [formData, setFormData] =React.useState(
-        {firstName:"", lastName: "", 
-        email : "" , comments : "",  
-        isBirthDay:"true",
-        employment : "",
-        favColor: ""
-    }
-     )
+	function handleChange(event) {
+		const { name, value, type, checked } = event.target
 
-    
-     function handleChange(event){
-        const {name, value, type,checked} = event.target
-        
-        setFormData(prevFormData =>{
-          return  {
-                ...prevFormData,
-                [name]: type === "checkbox" ?  checked : value 
-                // [event.target.name]: event.target.value
-            }})
-     }
+		setFormData((prevFormData) => {
+			return {
+				...prevFormData,
+				[name]: type === "checkbox" ? checked : value,
+				// [event.target.name]: event.target.value
+			}
+		})
+	}
 
-     function handleSubmit(event){
-        event.preventDefault()
-        //preventDefault  helps to render the page back without refreshing the page 
-        // submitToApi(formData)
-        console.log(formData)
-     }
-return(
-    <form onSubmit={handleSubmit}>
-        <input
-        type ="text"
-        placeholder= "First Name"
-        // onChange={handleChange}
-        onChange={handleChange}
-        name="firstName"
-        // for value u put ur current state.name of the input type , name for input type
-        value={formData.firstName}
+	function handleSubmit(event) {
+		event.preventDefault()
+		//preventDefault  helps to render the page back without refreshing the page
+		// submitToApi(formData)
+		console.log(formData)
+	}
+	return (
+		<>
+			<div>
+				<h2>Login</h2>
+			</div>
+			<form onSubmit={handleSubmit}>
+				<label htmlFor="username">Username or email address</label>
+				<br />
+				<input
+					type="text"
+					placeholder="Email"
+					// onChange={handleChange}
+					onChange={handleChange}
+					name="email"
+					value={formData.email}
+				/>
+				<br />
+				<label>Password</label>
+				<br />
+				<input
+					type="text"
+					placeholder="password"
+					onChange={handleChange}
+					name="password"
+					value={formData.password}
+				/>
+				<br />
+				<input id="remember-me" type="checkbox" />
+				<label htmlFor="remember-me">Remember me</label>
+                <br/>
 
-        />
-        <input
-        type= "text"
-        placeholder="Last Name"
-        onChange={handleChange}
-        name="lastName"
-        value={formData.lastName}
-        />
-        <input
-        type ="text"
-        placeholder= "Email"
-        // onChange={handleChange}
-        onChange={handleChange}
-        name="email"
-        value={formData.email}
-        />
-        <textarea 
-        placeholder="comments"
-        onChange={handleChange}
-        name="comments"
-        value={formData.comments}
-        />
-        <input 
-        type="checkbox" 
-        id = "isBirthDay"
-        checked= {formData.isBirthDay}
-        onChange={handleChange}
-        name="isBirthDay"
-        />
-        <label htmlFor="isBirthDay" >Is it Your birthday?</label>
-        <br />
-
-        <fieldset>
-            <legend> Current Employment State</legend>
-
-           <input
-            type="radio"
-            id="unemployed"
-            value="unemployed"
-            name= "employment"
-            onChange={handleChange}
-            checked={formData.employment === "unemployed"}
-            
-            />
-            <label html for ="unemployed">Unemployed</label>
-            <br />
-
-            <input
-            type="radio"
-            id="part-time"
-            value="part-time"
-            name= "employment"
-            onChange={handleChange}
-            checked={formData.employment === "part-time"}
-            />
-            <label html for ="part-time">Part Time</label>
-            <br />
-
-            <input
-            type="radio"
-            id="full-time"
-            value="full-time"
-            name= "employment"
-            onChange={handleChange}
-            checked={formData.employment === "full-time"}
-            />
-            <label html for ="full-time">Full-Time</label>
-            <br />
-        </fieldset>
-<br />
-<label htmlFor="favColor">What is your Favorite Color?</label>
-<br />
-<select 
-id="favColor"
-value={formData.favColor}
-onChange={handleChange}
-name="favColor"
->
-<option value ="">--Choose--</option>
-    <option value ="red">Red</option>
-    <option value ="blue">Blue</option>
-    <option value ="green">Green</option>
-</select> 
-<br/>
-<br/>
-
- <button>Submit</button>
-
-    </form>
-)
-    }
+                <button className="py-2 px-4 border border-slate-800 rounded-md bg-blue-500 text-white">
+            Submit
+          </button>
+          
+			</form>
+		</>
+	)
+}
