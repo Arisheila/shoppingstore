@@ -37,7 +37,6 @@ header .nav-icons .nav-icon-list {
 /* Banner Component CSS */
 .banner {
   background-image: url(${require('./img/banner.png')}); /* Import the background image dynamically */
-  // background-image: url(./img/banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -76,7 +75,6 @@ header .nav-icons .nav-icon-list {
 // Delivery
 .deliveryLayout{
   background: #FAF4F4;
-  width: 1440px;
 height: 300px;
 top: 1176px;
 }
@@ -97,12 +95,12 @@ top: 1176px;
   top: 479px
    left: 100px
 }
-.card{
-  width: 376px
-height: 108px
-top: 1272px
-left: 944px
-}
+// .card{
+//   width: 376px
+// height: 108px
+// top: 1272px
+// left: 944px
+// }
 h2{
   margin-top:100px;
 }
@@ -110,8 +108,7 @@ h2{
   font-family: Poppins;
 font-size: 32px;
  font-weight: 500;
-line-height: 48px;
-letter-spacing: 0em;
+// line-height: 48px;
 text-align: left;
 }
 .card-image-para{
@@ -124,18 +121,19 @@ font-weight: 400;
 }
 
 .delivery-container{
-  width: 1240.01px;
- height: 419px;
- top: 1574px;
- left: 100px;
+  // width: 1240.01px;
+//  height: 419px;
+//  top: 1574px;
+//  left: 100px;
 }
-.delivery-container-entire{
-  display:flex;
-  width: 1131px;
- height: 312px;
- top: 1574px;
- left: 102.01px;
- border: 1px;}
+// .delivery-container-entire{
+//   display:flex;
+//   width: 1131px;
+//  height: 312px;
+//  top: 1574px;
+//  left: 102.01px;
+//  border: 1px;
+// }
 
 //   text 
  font-family: Poppins;
@@ -160,10 +158,7 @@ font-size: 16px;
   left: 735.01px;
 }
 
-// .form-container{
-//  ; display: flex;
-//   grid-template-columns: 1fr 1fr;
-// }
+
 // .containers {
 //   display: grid;
 //   grid-template-columns: 1fr 1fr;

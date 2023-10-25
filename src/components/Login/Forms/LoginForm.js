@@ -1,22 +1,24 @@
 import React from 'react';
 
 export default function LoginForm() {
+
   const [formData, setFormData] = React.useState({
     password: '',
-    remember: true,
+    remember: " ",
     email: ''
   });
-
+ 
   function handleChange(event) {
     const { name, value, type, checked } = event.target;
-
-    setFormData(prevFormData => {
+    setFormData((prevFormData) => {
       return {
         ...prevFormData,
-        [name]: type === 'checkbox' ? checked : value,
+        [name]: type === "checkbox" ? checked : value,
       };
     });
   }
+
+
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -52,7 +54,7 @@ export default function LoginForm() {
           <input
             type="checkbox"
             id="remember"
-            checked={formData.remember}
+            value={formData.remember}
             onChange={handleChange}
             name="remember"
             className="mr-2"

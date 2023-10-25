@@ -3,7 +3,7 @@ import React from 'react';
 export default function Delivery() {
   return (
     <div className='deliveryLayout'>
-      <div className='container flex justify-between' style={{backgroundColor:" #FAF4F4"}}>
+      <div className='container flex justify-around items-center ' style={{gap:"50px", backgroundColor:" #FAF4F4"}}>
         {/* Secure Payment */}
         <div className='card-image'>
           <h2 className='card-image-text'>SECURE PAYMENT</h2>

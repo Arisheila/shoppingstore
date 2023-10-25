@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import Loginroute from "../src/components/Lolink";
 import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
 
