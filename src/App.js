@@ -1,16 +1,23 @@
-import "./App.css";
-import Loginroute from "../src/components/Lolink";
-import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
+/** @format */
+
+import "./App.css"
+import Loginmain from "./components/Login/Loginmain"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import NotFound from "./components/NotFound"
+import Dashboard from "./components/Dashboard"
 
 function App() {
-  return (
-    <div className="App">
-    <  Router>
-  <Loginroute/>
-
-      </Router>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Router>
+				<Routes>
+					<Route path="/" element={<Loginmain />} />
+					<Route path="*" element={<NotFound />} />
+					<Route path="/dashboard" element={<Dashboard />} />
+				</Routes>
+			</Router>
+		</div>
+	)
 }
 
-export default App;
+export default App

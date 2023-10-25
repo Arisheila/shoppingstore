@@ -144,39 +144,7 @@ font-size: 16px;
  text-align: left;
 }
 
-.link{
-   width: 68px;
-   height: 312px;
-   top: 1574px;
-   left: 523.01px;
-   color:#9f9f9f;
-} 
-.help {
-  width: 140px;
-  height: 242px;
-  top: 1574px;
-  left: 735.01px;
-}
 
-
-// .containers {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-column-gap: 10px; /* Adjust the gap between columns as needed */
-//   width: 608px;
-//   height: 630px;
-//   position: absolute;
-//   top: 479px;
-//   left: 100px;
-// }
-
-// .form-container{
-//   display: flex;
-//   justify-content: space-between; /* Adjust as needed for your layout */
-//   margin: 0 auto;
-//   width: 60%;
-//   padding: 90px 0px;
-// }
 
 .form-container{
   display: flex;

@@ -15,16 +15,20 @@ export default function LoginForm() {
         ...prevFormData,
         [name]: type === "checkbox" ? checked : value,
       };
+      
     });
+    // console.log("working!");
   }
-
 
 
   function handleSubmit(event) {
     event.preventDefault();
     // Add your form submission logic here, e.g., send data to a server
     console.log(formData);
+    
+    // console.log(event);
   }
+
 
   return (
     <div className="login-container">
@@ -38,6 +42,7 @@ export default function LoginForm() {
           onChange={handleChange}
           name="email"
           value={formData.email}
+          required
           className="border mb-2 p-2"
         />
 
@@ -47,6 +52,7 @@ export default function LoginForm() {
           name="password"
           value={formData.password}
           onChange={handleChange}
+          required
           className="border mb-2 p-2"
         />
 
@@ -68,7 +74,9 @@ export default function LoginForm() {
         >
           Log in
         </button>
-        <p className="mt-2">Lost Your Password?</p>
+        <p className="mt-2">
+          Lost Your Password?
+          </p>
       </form>
     </div>
   );

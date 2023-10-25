@@ -46,11 +46,12 @@ body {
 .nav-list-link {
     transition:  0.15s ease-in-out; /* Apply the transition effect to color and text-decoration */
     text-decoration: none; /* Remove the default underline */
-  }
+    /* color: red;   */
+}
   
   .nav-list-link:hover {
     transition:  0.15s ease-in-out;
-   color:var(--color3);
+   /* color:var(--color3); */
     text-decoration: underline; /* Add underline on hover */
   }
   

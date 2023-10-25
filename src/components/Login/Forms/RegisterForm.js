@@ -5,6 +5,8 @@ export default function RegisterForm() {
 
   const handleRegister = (e) => {
     e.preventDefault();
+    
+    console.log(email)
     // Add your registration logic here
   };
 
