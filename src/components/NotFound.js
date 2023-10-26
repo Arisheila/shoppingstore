@@ -1,11 +1,17 @@
-import React from 'react'
+/** @format */
+
+import React from "react"
+import Header from "./header/LoginHeader"
+import Banner from "./banner/LoginBanner"
 
 export default function NotFound() {
-  return (
-    <div>
-        <h1>
-            Sorry ! This page does not exist.
-        </h1>
-    </div>
-  )
+	return (
+		<div>
+			<Header />
+
+			<Banner />
+
+			<h1>Sorry ! This page does not exist.</h1>
+		</div>
+	)
 }

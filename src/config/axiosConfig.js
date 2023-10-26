@@ -1,4 +1,5 @@
 import axios from "axios";
+import { refreshToken } from "../services/authServices";
 
 const instance = axios.create({
   baseURL: process.env.REACT_APP_API_URL,
@@ -17,16 +18,15 @@ instance.interceptors.response.use(
   (response) => {
     return response;
   },
-  (error) => {
+  async (error) => {
     const originalRequest = error.config;
     if (error.response.status === 401 && !originalRequest._retry) {
       originalRequest._retry = true;
-      return refreshToken().then(() => {
-        originalRequest.headers.Authorization = `Bearer ${localStorage.getItem(
-          "accessToken"
-        )}`;
-        return instance(originalRequest);
-      });
+      await refreshToken();
+      originalRequest.headers.Authorization = `Bearer ${localStorage.getItem(
+        "accessToken"
+      )}`;
+      return await instance(originalRequest);
     }
     return Promise.reject(error);
   }
