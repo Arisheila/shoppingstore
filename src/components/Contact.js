@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from "./header/Header";
-import Banner from "./banner/Banner";
+import Header from "./header/LoginHeader";
+import Banner from "./banner/LoginBanner";
 
 export default function Contact() {
     

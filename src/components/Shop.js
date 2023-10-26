@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from "./header/LoginHeader";
-import Banner from "./banner/Banner";
+import Banner from "./banner/LoginBanner"
 
 export default function Shop() {
     
