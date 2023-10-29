@@ -9,7 +9,12 @@ const initalState ={
 const productSlice = createSlice({
     name: "products",
     initalState,
-    reducers:{},
+
+    reducers:{
+        sampleReducer:(state, action) => {
+                state.items = action.payload
+        }
+    },
 
 })
 
