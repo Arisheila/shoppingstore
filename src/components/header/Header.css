@@ -1,9 +1,9 @@
-/* *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-} */
-@import '~font-awesome/css/font-awesome.min.css';
+} 
+
 
 body {
     font-family: "Poppins", sans-serif;
@@ -74,6 +74,13 @@ body {
     right: 20px;
 }
 #check {display: none;}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+}
 @media(max-width: 610px){
     .menu {
         flex-direction: column;

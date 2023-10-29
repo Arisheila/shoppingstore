@@ -23,7 +23,6 @@ const Header = () => {
 								className="banner-content-icon"
 							/>
 						</Link>
-						{/* <a href='#'><img src='./images/logo.png'/></a> */}
 					</li>
 					<input type="checkbox" id="check" />
 					<span class="menu">

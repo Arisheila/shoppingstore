@@ -6,6 +6,8 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Shop from "./components/Shop";
 import SingleItem from "../src/components/Single/SingleItem"
+import FooterMain from "./components/Footer/Footer"
+import NotFound from "./components/NotFound";
 import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
 
 function App() {
@@ -13,21 +15,21 @@ function App() {
     <div className="App">
     <  Router>
    
-      {/* <Header /> */}
-      {/* <Banner /> */}
-      {/* <ProductList /> */}
+     
+   
 
       <Routes>
       <Route path="/" element={<ProductList />} />
       <Route path="/about" element={<About />} />
-
+      <Route path="*" element={<NotFound />} />
 
       <Route path="/contact" element={<Contact />} />
       <Route path="/shop" element={<Shop />} />
-      {/* <Route path="/about" element={<About />} /> */}
       <Route path="/shop/:id" element={<SingleItem />} />
      
      </Routes>
+
+  <FooterMain />
 
       </Router>
     </div>

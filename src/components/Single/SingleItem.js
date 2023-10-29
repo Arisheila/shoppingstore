@@ -109,14 +109,6 @@ export default function SingleItem() {
       </section>
     </main>
 
-    // <div>
-    //   <Header />
-    //   <BreadCrumbs />
-    //   <h1>{currentProduct.title}</h1>
-    //   <img src={currentProduct.image} alt="imge"/>
-    //   <h1>{currentProduct.price}</h1>
-
-    //   <Footer />
-    // </div>
+   
   );
 }
