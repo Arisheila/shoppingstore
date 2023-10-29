@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import products from "./ProductData"
 import Header from "../header/Header"
 import Banner from "../banner/Banner"
+import FooterMain from "../Footer/Footer"
 
 const ProductList = () => {
 	// Pagination Part
@@ -83,6 +84,8 @@ const ProductList = () => {
 					</div>
 				</div>
 			</div>
+
+			<FooterMain />
 		</>
 	)
 }
