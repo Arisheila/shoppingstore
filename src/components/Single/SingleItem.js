@@ -1,7 +1,6 @@
 import React, {useState}from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../product-list/ProductData';
-import Header from '../header/Header';
 import Footer from './Footer';
 import Rating  from './icons/Rating';
 import BreadCrumbs from './BreadCrumbs';
@@ -26,7 +25,6 @@ export default function SingleItem() {
 
   return (
 <main>
-      <Header />
       <section className="max-w-7xl mx-auto mt-8 pb-10">
         <BreadCrumbs />
         <div className="flex flex-col items-end justify-end">

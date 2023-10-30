@@ -1,5 +1,3 @@
-/** @format */
-
 import product1 from "./img/product1.png"
 import product2 from "./img/product2.png"
 import product3 from "./img/product3.png"

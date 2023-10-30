@@ -14,8 +14,8 @@ const Header = () => {
 	return (
 		<header>
 			<nav>
-				<ul class="nav-bar">
-					<li class="logo">
+				<ul className="nav-bar">
+					<li className="logo">
 						<Link to="/">
 							<img
 								src={shoplogo}
@@ -25,7 +25,7 @@ const Header = () => {
 						</Link>
 					</li>
 					<input type="checkbox" id="check" />
-					<span class="menu">
+					<span className="menu">
 						<li className="nav-list">
 							<Link className="nav-list-link" to="/">
 								Home
@@ -46,12 +46,12 @@ const Header = () => {
 								Contact
 							</Link>
 						</li>
-						<label for="check" class="close-menu">
+						<label htmlFor="check" className="close-menu">
 							<RxCross2 />
 							{/* <i class="fas fa-times"></i> */}
 						</label>
 					</span>
-					<label for="check" class="open-menu">
+					<label htmlFor="check" className="open-menu">
 						{/* <i class="fas fa-bars"></i> */}
 						<FaBars />
 					</label>
