@@ -21,6 +21,7 @@ body {
     /* background-color: var(--color2); */
     padding: 12px 20px;
 }
+
 .logo img {width: 40px;}
 .menu {display: flex;}
 .menu li {padding-left: 30px;}
@@ -98,6 +99,10 @@ header{
     }
     .menu .nav-list {margin-top: 40px;}
     .menu .nav-list {padding: 10px;}
+
+    .banner-content-icon{
+    display:none;
+    }
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
 }
